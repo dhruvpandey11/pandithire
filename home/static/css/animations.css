@@ -1,0 +1,215 @@
+/*=========================================
+SCROLL REVEAL
+=========================================*/
+
+.reveal{
+    opacity:0;
+    transform:translateY(70px);
+    transition:all .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/*=========================================
+HERO ANIMATIONS
+=========================================*/
+
+.hero-left{
+    animation:slideLeft 1s ease;
+}
+
+.hero-right{
+    animation:slideRight 1s ease;
+}
+
+.hero-badge{
+    animation:fadeDown .8s ease;
+}
+
+.hero-buttons{
+    animation:fadeUp 1s ease;
+}
+
+/*=========================================
+FLOATING IMAGE
+=========================================*/
+
+.hero-right img{
+    animation:floatImage 5s ease-in-out infinite;
+}
+
+/*=========================================
+BUTTON SHINE
+=========================================*/
+
+.btn-primary{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+.btn-primary:hover::before{
+
+    left:150%;
+
+}
+
+/*=========================================
+SERVICE HOVER
+=========================================*/
+
+.service-card{
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.service-card img{
+
+    transition:.5s;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+KEYFRAMES
+=========================================*/
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}

@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}
+        Pandithire - आपकी पूजा, आपके घर
+        {% endblock %}
+    </title>
+
+    <meta name="description"
+        content="Pandithire - Book experienced pandits for puja, havan, griha pravesh, marriage and all religious ceremonies.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hero.css' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <link rel="stylesheet" href="{% static 'css/why.css' %}">
+    <link rel="stylesheet" href="{% static 'css/booking.css' %}">
+    <link rel="stylesheet" href="{% static 'css/location.css' %}">
+    <link rel="stylesheet" href="{% static 'css/join_pandit.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animations.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div class="container top-bar-inner">
+
+        <div class="top-left">
+            <i class="fa-solid fa-envelope"></i>
+            info@pandithire.in
+        </div>
+
+        <div class="top-center">
+            ॥ श्री गणेशाय नमः ॥
+        </div>
+
+        <div class="top-right">
+            <i class="fa-solid fa-phone"></i>
+            +91 99999 12345
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-wrapper">
+
+        <a href="/" class="logo">
+
+            <img src="{% static 'images/logo.png' %}" alt="Pandithire Logo">
+
+            <div>
+
+                <h2>Pandithire<span>.in</span></h2>
+
+                <p>आपकी पूजा, आपके घर</p>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+              <li>
+               <a href="/">Home / होम</a>
+              </li>
+
+              <li>
+               <a href="#services">Services / सेवाएँ</a>
+              </li>
+
+             <li>
+              <a href="#locations">Mumbai Areas</a>
+             </li>
+
+              <li>
+                <a href="#booking">Book Pandit</a>
+              </li>
+
+             <li>
+              <a href="{% url 'join_pandit' %}">
+                Join as Pandit
+              </a>
+              </li>
+
+              <li>
+               <a href="#contact">Contact</a>
+    </li>
+
+</ul>
+
+        </nav>
+
+        <a href="#booking"
+           onclick="showBooking('puja')"
+           class="book-btn">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            पंडित बुक करें
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= PAGE CONTENT ================= -->
+
+<main>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-col">
+
+            <h2 class="footer-logo">
+                Pandithire<span>.in</span>
+            </h2>
+
+            <p>
+                भारत की विश्वसनीय धार्मिक सेवा।
+                अनुभवी एवं प्रमाणित पंडितों द्वारा
+                पूजा, विवाह, हवन, गृह प्रवेश एवं
+                सभी धार्मिक अनुष्ठान।
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="/">Home / होम</a></li>
+
+                <li><a href="#services">Services / सेवाएँ</a></li>
+
+                <li><a href="#locations">Mumbai Areas</a></li>
+
+                <li>
+                  <a href="{% url 'join_pandit' %}">
+                    Join as Pandit
+                  </a>
+                </li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Popular Services</h3>
+
+            <ul>
+
+                <li><a href="#">गृह प्रवेश पूजा</a></li>
+
+                <li><a href="#">विवाह पूजा</a></li>
+
+                <li><a href="#">हवन</a></li>
+
+                <li><a href="#">सत्यनारायण कथा</a></li>
+
+                <li><a href="#">ज्योतिष सेवा</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contact</h3>
+
+            <p><i class="fas fa-phone"></i> +91 99999 12345</p>
+
+            <p><i class="fas fa-envelope"></i> info@pandithire.in</p>
+
+            <p><i class="fas fa-location-dot"></i> India</p>
+
+            <a href="#booking" class="book-btn">
+
+              <i class="fa-solid fa-calendar-check"></i>
+
+              Book Pandit
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Pandithire.in | Designed & Developed by
+        <strong>Dhruv Pandey</strong>
+
+    </div>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="{% static 'js/main.js' %}"></script>
+
+{% block extra_js %}
+{% endblock %}
+
+</body>
+</html>

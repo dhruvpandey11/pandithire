@@ -1,0 +1,231 @@
+/*=========================================
+TOP BAR
+=========================================*/
+
+.top-bar{
+    background:#8B1E12;
+    color:#fff;
+    padding:10px 0;
+    font-size:14px;
+}
+
+.top-bar-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.top-bar i{
+    margin-right:8px;
+    color:#E67E22;
+}
+
+/*=========================================
+HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(255,255,255,.90);
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+}
+
+.nav-wrapper{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/*=========================================
+LOGO
+=========================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#222;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.logo h2{
+
+    font-size:32px;
+
+    color:#8B1E12;
+
+    font-weight:800;
+
+}
+
+.logo span{
+
+    color:#E67E22;
+
+}
+
+.logo p{
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+/*=========================================
+NAVIGATION
+=========================================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    color:#222;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#E67E22;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#E67E22;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+BOOK BUTTON
+=========================================*/
+
+.book-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#E67E22;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(230,126,34,.25);
+
+}
+
+.book-btn:hover{
+
+    background:#8B1E12;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+
+
+
+body{
+
+    padding-top:90px;
+
+}

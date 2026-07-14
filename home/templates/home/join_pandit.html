@@ -1,0 +1,529 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}Join as Pandit | Pandithire{% endblock %}
+
+{% block content %}
+
+<!-- ==========================================
+JOIN HERO
+========================================== -->
+
+<section class="join-hero">
+
+    <div class="join-overlay"></div>
+
+    <div class="container hero-wrapper">
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+                🙏 Join Pandithire Family
+            </span>
+
+            <h1>
+
+                पंडित पंजीकरण
+
+                <span>Join As A Pandit</span>
+
+            </h1>
+
+            <p>
+
+                Become a verified Pandithire Partner and receive
+                regular puja bookings from customers across Mumbai.
+
+                <br><br>
+
+                पंडितहायर परिवार से जुड़ें और नियमित पूजा
+                बुकिंग प्राप्त करें।
+
+            </p>
+
+            <div class="hero-points">
+
+                <div>✅ Daily Bookings</div>
+
+                <div>✅ Weekly Payments</div>
+
+                <div>✅ Verified Customers</div>
+
+                <div>✅ Flexible Working</div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="{% static 'images/pandit.jpeg' %}" alt="Join Pandithire">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+REGISTRATION FORM
+========================================== -->
+
+<section class="join-form-section">
+
+<div class="container">
+
+<form class="join-form">
+    <!-- ==========================================
+PROFESSIONAL INFORMATION
+========================================== -->
+
+<div class="section-title">
+
+    <h2>
+
+        व्यावसायिक जानकारी
+
+        <br>
+
+        <span>Professional Information</span>
+
+    </h2>
+
+</div>
+
+<div class="form-grid">
+
+    <div class="form-group">
+
+        <label>
+
+            अनुभव
+
+            <br>
+
+            <small>Years of Experience</small>
+
+        </label>
+
+        <input type="number" placeholder="Eg. 10">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>
+
+            पूजा शुल्क
+
+            <br>
+
+            <small>Starting Charges (₹)</small>
+
+        </label>
+
+        <input type="number" placeholder="₹ 1100">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>
+
+            ज्ञात भाषाएँ
+
+            <br>
+
+            <small>Languages Known</small>
+
+        </label>
+
+        <input
+            type="text"
+            placeholder="Hindi, Marathi, Sanskrit, English">
+
+    </div>
+
+    <div class="form-group">
+
+        <label>
+
+            मुख्य विशेषज्ञता
+
+            <br>
+
+            <small>Main Specialization</small>
+
+        </label>
+
+        <select>
+
+            <option>Select</option>
+
+            <option>गृह प्रवेश पूजा</option>
+
+            <option>विवाह संस्कार</option>
+
+            <option>सत्यनारायण कथा</option>
+
+            <option>रुद्राभिषेक</option>
+
+            <option>हवन</option>
+
+            <option>वास्तु पूजा</option>
+
+            <option>ज्योतिष</option>
+
+        </select>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+SERVICES OFFERED
+========================================== -->
+
+<div class="section-title">
+
+    <h2>
+
+        उपलब्ध सेवाएँ
+
+        <br>
+
+        <span>Services You Provide</span>
+
+    </h2>
+
+</div>
+
+<div class="checkbox-grid">
+
+<label><input type="checkbox"> गृह प्रवेश / House Warming</label>
+
+<label><input type="checkbox"> विवाह / Marriage</label>
+
+<label><input type="checkbox"> सत्यनारायण कथा</label>
+
+<label><input type="checkbox"> रुद्राभिषेक</label>
+
+<label><input type="checkbox"> हवन / Havan</label>
+
+<label><input type="checkbox"> मुंडन</label>
+
+<label><input type="checkbox"> नामकरण</label>
+
+<label><input type="checkbox"> गणेश पूजा</label>
+
+<label><input type="checkbox"> लक्ष्मी पूजा</label>
+
+<label><input type="checkbox"> दुर्गा पूजा</label>
+
+<label><input type="checkbox"> वास्तु पूजा</label>
+
+<label><input type="checkbox"> ज्योतिष परामर्श</label>
+
+</div>
+
+<!-- ==========================================
+AVAILABILITY
+========================================== -->
+
+<div class="section-title">
+
+<h2>
+
+उपलब्धता
+
+<br>
+
+<span>Availability</span>
+
+</h2>
+
+</div>
+
+<div class="availability-grid">
+
+<div class="availability-card">
+
+<label>
+
+क्या आप घर जाकर पूजा करेंगे?
+
+<br>
+
+<small>Available for Home Visits?</small>
+
+</label>
+
+<select>
+
+<option>Yes / हाँ</option>
+
+<option>No / नहीं</option>
+
+</select>
+
+</div>
+
+<div class="availability-card">
+
+<label>
+
+क्या आप पूरे मुंबई में यात्रा करेंगे?
+
+<br>
+
+<small>Can You Travel Across Mumbai?</small>
+
+</label>
+
+<select>
+
+<option>Yes / हाँ</option>
+
+<option>No / नहीं</option>
+
+</select>
+
+</div>
+
+<div class="availability-card">
+
+<label>
+
+क्या आपके पास पूजा सामग्री है?
+
+<br>
+
+<small>Do You Have Puja Samagri?</small>
+
+</label>
+
+<select>
+
+<option>Yes / हाँ</option>
+
+<option>No / नहीं</option>
+
+</select>
+
+</div>
+
+<div class="availability-card">
+
+<label>
+
+क्या आपके पास अपना वाहन है?
+
+<br>
+
+<small>Own Vehicle?</small>
+
+</label>
+
+<select>
+
+<option>Yes / हाँ</option>
+
+<option>No / नहीं</option>
+
+</select>
+
+</div>
+
+</div>
+
+<h2>
+
+व्यक्तिगत जानकारी
+
+<br>
+
+<span>Personal Information</span>
+
+</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>
+
+पूरा नाम
+
+<br>
+
+<small>Full Name</small>
+
+</label>
+
+<input type="text">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+पिता का नाम
+
+<br>
+
+<small>Father's Name</small>
+
+</label>
+
+<input type="text">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+मोबाइल नंबर
+
+<br>
+
+<small>Mobile Number</small>
+
+</label>
+
+<input type="tel">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+ईमेल
+
+<br>
+
+<small>Email Address</small>
+
+</label>
+
+<input type="email">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+जन्म तिथि
+
+<br>
+
+<small>Date of Birth</small>
+
+</label>
+
+<input type="date">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+आयु
+
+<br>
+
+<small>Age</small>
+
+</label>
+
+<input type="number">
+
+</div>
+
+<div class="form-group full">
+
+<label>
+
+पूरा पता
+
+<br>
+
+<small>Current Address</small>
+
+</label>
+
+<textarea rows="4"></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+शहर
+
+<br>
+
+<small>City</small>
+
+</label>
+
+<select>
+
+<option>Mumbai</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+क्षेत्र
+
+<br>
+
+<small>Area</small>
+
+</label>
+
+<select>
+
+<option>Choose Area</option>
+
+<option>Andheri</option>
+
+<option>Bandra</option>
+
+<option>Goregaon</option>
+
+<option>Malad</option>
+
+<option>Kandivali</option>
+
+<option>Borivali</option>
+
+<option>Dadar</option>
+
+<option>Powai</option>
+
+<option>Kurla</option>
+
+<option>Chembur</option>
+
+<option>Ghatkopar</option>
+
+<option>Thane</option>
+
+</select>
+
+</div>
+
+</div>
+
+{% endblock %}

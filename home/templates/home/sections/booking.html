@@ -1,0 +1,132 @@
+{% load static %}
+
+<section class="booking-section" id="booking">
+
+<div class="container">
+
+    <div class="booking-heading">
+
+        <span>BOOK OUR SERVICES</span>
+
+        <h2>अपनी सेवा चुनें</h2>
+
+        <p>
+            पूजा बुक करें या विवाह सेवा के लिए रजिस्ट्रेशन करें।
+        </p>
+
+    </div>
+
+    <!-- Tabs -->
+
+    <div class="booking-tabs">
+
+        <button class="tab-btn active"
+                onclick="showBooking('puja')">
+
+            🛕 पूजा बुक करें
+
+        </button>
+
+        <button class="tab-btn"
+                onclick="showBooking('marriage')">
+
+            💍 विवाह सेवा
+
+        </button>
+
+    </div>
+
+    <!-- Puja -->
+
+    <div id="puja-booking" class="booking-card active">
+
+        <div class="booking-left">
+
+            <h3>पूजा बुक करें</h3>
+
+            <p>
+
+                घर बैठे अनुभवी एवं प्रमाणित पंडितों द्वारा
+                सभी धार्मिक अनुष्ठान सम्पन्न करवाएँ।
+
+            </p>
+
+            <ul>
+
+                <li>✅ Verified Pandits</li>
+
+                <li>✅ Same Day Booking</li>
+
+                <li>✅ Transparent Pricing</li>
+
+                <li>✅ Doorstep Service</li>
+
+                <li>✅ 24×7 Support</li>
+
+            </ul>
+
+            <a href="#" class="book-now-btn">
+
+                📅 Book Now
+
+            </a>
+
+        </div>
+
+        <div class="booking-right">
+
+            <img src="{% static 'images/bookingpuja.jpeg' %}" alt="">
+
+        </div>
+
+    </div>
+
+    <!-- Marriage -->
+
+    <div id="marriage-booking" class="booking-card">
+
+        <div class="booking-left">
+
+            <h3>विवाह सेवा</h3>
+
+            <p>
+
+                विवाह हेतु अनुभवी वैदिक पंडित,
+                सम्पूर्ण विवाह संस्कार एवं
+                ऑनलाइन बुकिंग।
+
+            </p>
+
+            <ul>
+
+                <li>✅ Marriage Specialists</li>
+
+                <li>✅ Complete Rituals</li>
+
+                <li>✅ Affordable Packages</li>
+
+                <li>✅ Pan India Service</li>
+
+                <li>✅ WhatsApp Support</li>
+
+            </ul>
+
+            <a href="#" class="book-now-btn">
+
+                💍 Register Now
+
+            </a>
+
+        </div>
+
+        <div class="booking-right">
+
+            <img src="{% static 'images/marriage.jpg' %}" alt="">
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>

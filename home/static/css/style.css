@@ -1,0 +1,50 @@
+/*=========================================
+RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#8B1E12;
+    --secondary:#E67E22;
+    --light:#FFF8F1;
+    --white:#ffffff;
+    --dark:#222;
+    --gray:#666;
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:var(--dark);
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1320px;
+    margin:auto;
+}
