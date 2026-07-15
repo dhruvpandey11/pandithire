@@ -1,0 +1,290 @@
+/* ===========================================
+   FOOTER
+=========================================== */
+
+.footer{
+    background:#7b1b12;
+    color:#fff;
+    padding:70px 0 0;
+    margin-top:100px;
+}
+
+.footer .container{
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* Grid */
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.3fr;
+
+    gap:45px;
+
+}
+
+/* Logo */
+
+.footer-logo{
+
+    width:220px;
+
+    margin-bottom:20px;
+
+}
+
+/* Paragraph */
+
+.footer-col p{
+
+    color:#eee;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+}
+
+/* Heading */
+
+.footer-col h3{
+
+    font-size:22px;
+
+    margin-bottom:22px;
+
+    color:#fff;
+
+    position:relative;
+
+}
+
+.footer-col h3::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:55px;
+
+    height:3px;
+
+    background:#ef7f1a;
+
+}
+
+/* Links */
+
+.footer-col ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-col ul li{
+
+    margin-bottom:14px;
+
+}
+
+.footer-col ul li a{
+
+    color:#eee;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.footer-col ul li a:hover{
+
+    color:#ef7f1a;
+
+    padding-left:8px;
+
+}
+
+/* Contact */
+
+.footer-col p i{
+
+    color:#ef7f1a;
+
+    width:25px;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:25px;
+
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#ef7f1a;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+.footer-social a:hover{
+
+    background:#fff;
+
+    color:#7b1b12;
+
+    transform:translateY(-5px);
+
+}
+
+/* Book Button */
+
+.footer-book-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:18px;
+
+    padding:14px 28px;
+
+    background:#ef7f1a;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.footer-book-btn:hover{
+
+    background:#fff;
+
+    color:#7b1b12;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    margin-top:55px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:22px 0;
+
+    text-align:center;
+
+    color:#ddd;
+
+    font-size:15px;
+
+}
+
+.footer-bottom strong{
+
+    color:#ef7f1a;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.footer-col h3::after{
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-book-btn{
+
+justify-content:center;
+
+}
+
+}

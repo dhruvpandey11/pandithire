@@ -11,4 +11,11 @@ urlpatterns = [
         name="join_pandit"
     ),
 
+    path(
+        "services/",
+        views.all_services,
+        name="all_services"
+    ),
+
 ]
+

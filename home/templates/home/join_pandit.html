@@ -5,518 +5,210 @@
 
 {% block content %}
 
-<!-- ==========================================
-JOIN HERO
-========================================== -->
-
-<section class="join-hero">
-
-    <div class="join-overlay"></div>
-
-    <div class="container hero-wrapper">
-
-        <div class="hero-left">
-
-            <span class="hero-badge">
-                🙏 Join Pandithire Family
-            </span>
-
-            <h1>
-
-                पंडित पंजीकरण
-
-                <span>Join As A Pandit</span>
-
-            </h1>
-
-            <p>
-
-                Become a verified Pandithire Partner and receive
-                regular puja bookings from customers across Mumbai.
-
-                <br><br>
-
-                पंडितहायर परिवार से जुड़ें और नियमित पूजा
-                बुकिंग प्राप्त करें।
-
-            </p>
-
-            <div class="hero-points">
-
-                <div>✅ Daily Bookings</div>
-
-                <div>✅ Weekly Payments</div>
-
-                <div>✅ Verified Customers</div>
-
-                <div>✅ Flexible Working</div>
-
-            </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <img src="{% static 'images/pandit.jpeg' %}" alt="Join Pandithire">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ==========================================
-REGISTRATION FORM
-========================================== -->
-
-<section class="join-form-section">
+<section class="join-pandit">
 
 <div class="container">
 
-<form class="join-form">
-    <!-- ==========================================
-PROFESSIONAL INFORMATION
-========================================== -->
+<div class="join-wrapper">
 
-<div class="section-title">
+<!-- LEFT -->
 
-    <h2>
+<div class="join-left">
 
-        व्यावसायिक जानकारी
+<span class="join-badge">
 
-        <br>
+<i class="fa-solid fa-certificate"></i>
 
-        <span>Professional Information</span>
+Verified Partner Program
 
-    </h2>
-
-</div>
-
-<div class="form-grid">
-
-    <div class="form-group">
-
-        <label>
-
-            अनुभव
-
-            <br>
-
-            <small>Years of Experience</small>
-
-        </label>
-
-        <input type="number" placeholder="Eg. 10">
-
-    </div>
-
-    <div class="form-group">
-
-        <label>
-
-            पूजा शुल्क
-
-            <br>
-
-            <small>Starting Charges (₹)</small>
-
-        </label>
-
-        <input type="number" placeholder="₹ 1100">
-
-    </div>
-
-    <div class="form-group">
-
-        <label>
-
-            ज्ञात भाषाएँ
-
-            <br>
-
-            <small>Languages Known</small>
-
-        </label>
-
-        <input
-            type="text"
-            placeholder="Hindi, Marathi, Sanskrit, English">
-
-    </div>
-
-    <div class="form-group">
-
-        <label>
-
-            मुख्य विशेषज्ञता
-
-            <br>
-
-            <small>Main Specialization</small>
-
-        </label>
-
-        <select>
-
-            <option>Select</option>
-
-            <option>गृह प्रवेश पूजा</option>
-
-            <option>विवाह संस्कार</option>
-
-            <option>सत्यनारायण कथा</option>
-
-            <option>रुद्राभिषेक</option>
-
-            <option>हवन</option>
-
-            <option>वास्तु पूजा</option>
-
-            <option>ज्योतिष</option>
-
-        </select>
-
-    </div>
-
-</div>
-
-<!-- ==========================================
-SERVICES OFFERED
-========================================== -->
-
-<div class="section-title">
-
-    <h2>
-
-        उपलब्ध सेवाएँ
-
-        <br>
-
-        <span>Services You Provide</span>
-
-    </h2>
-
-</div>
-
-<div class="checkbox-grid">
-
-<label><input type="checkbox"> गृह प्रवेश / House Warming</label>
-
-<label><input type="checkbox"> विवाह / Marriage</label>
-
-<label><input type="checkbox"> सत्यनारायण कथा</label>
-
-<label><input type="checkbox"> रुद्राभिषेक</label>
-
-<label><input type="checkbox"> हवन / Havan</label>
-
-<label><input type="checkbox"> मुंडन</label>
-
-<label><input type="checkbox"> नामकरण</label>
-
-<label><input type="checkbox"> गणेश पूजा</label>
-
-<label><input type="checkbox"> लक्ष्मी पूजा</label>
-
-<label><input type="checkbox"> दुर्गा पूजा</label>
-
-<label><input type="checkbox"> वास्तु पूजा</label>
-
-<label><input type="checkbox"> ज्योतिष परामर्श</label>
-
-</div>
-
-<!-- ==========================================
-AVAILABILITY
-========================================== -->
-
-<div class="section-title">
+</span>
 
 <h2>
 
-उपलब्धता
+Become a Verified
 
 <br>
 
-<span>Availability</span>
+Pandithire Partner
 
 </h2>
 
-</div>
+<p>
 
-<div class="availability-grid">
+Join Mumbai's fastest growing Pandit Booking Platform.
 
-<div class="availability-card">
+Receive verified customer bookings, flexible work opportunities,
+weekly payouts and build your religious service career with us.
 
-<label>
+</p>
 
-क्या आप घर जाकर पूजा करेंगे?
+<div class="join-benefits">
 
-<br>
+<div class="benefit">
 
-<small>Available for Home Visits?</small>
+<i class="fa-solid fa-circle-check"></i>
 
-</label>
-
-<select>
-
-<option>Yes / हाँ</option>
-
-<option>No / नहीं</option>
-
-</select>
+<span>Daily Customer Bookings</span>
 
 </div>
 
-<div class="availability-card">
+<div class="benefit">
 
-<label>
+<i class="fa-solid fa-circle-check"></i>
 
-क्या आप पूरे मुंबई में यात्रा करेंगे?
-
-<br>
-
-<small>Can You Travel Across Mumbai?</small>
-
-</label>
-
-<select>
-
-<option>Yes / हाँ</option>
-
-<option>No / नहीं</option>
-
-</select>
+<span>Verified Customers</span>
 
 </div>
 
-<div class="availability-card">
+<div class="benefit">
 
-<label>
+<i class="fa-solid fa-circle-check"></i>
 
-क्या आपके पास पूजा सामग्री है?
-
-<br>
-
-<small>Do You Have Puja Samagri?</small>
-
-</label>
-
-<select>
-
-<option>Yes / हाँ</option>
-
-<option>No / नहीं</option>
-
-</select>
+<span>Weekly Payments</span>
 
 </div>
 
-<div class="availability-card">
+<div class="benefit">
 
-<label>
+<i class="fa-solid fa-circle-check"></i>
 
-क्या आपके पास अपना वाहन है?
+<span>Flexible Working Hours</span>
 
-<br>
+</div>
 
-<small>Own Vehicle?</small>
+<div class="benefit">
 
-</label>
+<i class="fa-solid fa-circle-check"></i>
 
-<select>
-
-<option>Yes / हाँ</option>
-
-<option>No / नहीं</option>
-
-</select>
+<span>24×7 Support Team</span>
 
 </div>
 
 </div>
 
-<h2>
+<div class="join-buttons">
 
-व्यक्तिगत जानकारी
+<a href="#panditForm"
 
-<br>
+class="join-btn join-primary">
 
-<span>Personal Information</span>
+Register Now
 
-</h2>
+</a>
 
-<div class="form-grid">
+<a href="https://wa.me/918356807008"
 
-<div class="form-group">
+target="_blank"
 
-<label>
+class="join-btn join-secondary">
 
-पूरा नाम
+WhatsApp
 
-<br>
-
-<small>Full Name</small>
-
-</label>
-
-<input type="text">
+</a>
 
 </div>
 
-<div class="form-group">
+</div>
 
-<label>
+<!-- RIGHT -->
 
-पिता का नाम
+<div class="join-form-card" id="panditForm">
 
-<br>
+<div class="join-trust">
 
-<small>Father's Name</small>
-
-</label>
-
-<input type="text">
+⭐ Join 500+ Verified Pandits
 
 </div>
 
-<div class="form-group">
+<h3>
 
-<label>
+Pandit Registration
 
-मोबाइल नंबर
+</h3>
 
-<br>
+<p>
 
-<small>Mobile Number</small>
+Fill the details below to become a Pandithire Partner.
 
-</label>
+</p>
 
-<input type="tel">
+<form id="panditFormData">
 
-</div>
 
-<div class="form-group">
+<!-- PERSONAL -->
 
-<label>
+<div class="join-input">
 
-ईमेल
-
-<br>
-
-<small>Email Address</small>
-
-</label>
-
-<input type="email">
+<input
+id="fullname"
+type="text"
+placeholder="Full Name"
+required>
 
 </div>
 
-<div class="form-group">
+<div class="join-double">
 
-<label>
+<div class="join-input">
 
-जन्म तिथि
-
-<br>
-
-<small>Date of Birth</small>
-
-</label>
-
-<input type="date">
+<input
+id="father"
+type="text"
+placeholder="Father's Name">
 
 </div>
 
-<div class="form-group">
+<div class="join-input">
 
-<label>
-
-आयु
-
-<br>
-
-<small>Age</small>
-
-</label>
-
-<input type="number">
+<input
+id="mobile"
+type="tel"
+placeholder="Mobile Number"
+required>
 
 </div>
 
-<div class="form-group full">
+</div>
 
-<label>
+<div class="join-double">
 
-पूरा पता
+<div class="join-input">
 
-<br>
-
-<small>Current Address</small>
-
-</label>
-
-<textarea rows="4"></textarea>
+<input
+id="email"
+type="email"
+placeholder="Email">
 
 </div>
 
-<div class="form-group">
+<div class="join-input">
 
-<label>
+<input
+id="dob"
+type="date">
 
-शहर
+</div>
 
-<br>
+</div>
 
-<small>City</small>
+<div class="join-double">
 
-</label>
+<div class="join-input">
 
-<select>
+<input
+id="age"
+type="number"
+placeholder="Age">
+
+</div>
+
+<div class="join-input">
+
+<select id="city">
 
 <option>Mumbai</option>
 
-</select>
-
-</div>
-
-<div class="form-group">
-
-<label>
-
-क्षेत्र
-
-<br>
-
-<small>Area</small>
-
-</label>
-
-<select>
-
-<option>Choose Area</option>
-
-<option>Andheri</option>
-
-<option>Bandra</option>
-
-<option>Goregaon</option>
-
-<option>Malad</option>
-
-<option>Kandivali</option>
-
-<option>Borivali</option>
-
-<option>Dadar</option>
-
-<option>Powai</option>
-
-<option>Kurla</option>
-
-<option>Chembur</option>
-
-<option>Ghatkopar</option>
+<option>Navi Mumbai</option>
 
 <option>Thane</option>
 
@@ -525,5 +217,251 @@ AVAILABILITY
 </div>
 
 </div>
+
+<div class="join-input">
+
+<select id="area">
+
+<option>Select Area</option>
+
+<option>Andheri</option>
+
+<option>Bandra</option>
+
+<option>Malad</option>
+
+<option>Borivali</option>
+
+<option>Dadar</option>
+
+<option>Powai</option>
+
+<option>Ghatkopar</option>
+
+<option>Chembur</option>
+
+</select>
+
+</div>
+
+<!-- PROFESSIONAL INFORMATION -->
+
+<div class="join-double">
+
+    <div class="join-input">
+
+        <input
+            id="experience"
+            type="number"
+            placeholder="Years of Experience">
+
+    </div>
+
+    <div class="join-input">
+
+        <input
+            id="charges"
+            type="number"
+            placeholder="Starting Charges (₹)">
+
+    </div>
+
+</div>
+
+<div class="join-input">
+
+    <input
+        id="languages"
+        type="text"
+        placeholder="Languages (Hindi, Marathi, Sanskrit...)">
+
+</div>
+
+<div class="join-input">
+
+    <select id="specialization">
+
+        <option value="">Main Specialization</option>
+
+        <option>Griha Pravesh</option>
+
+        <option>Marriage</option>
+
+        <option>Satyanarayan Katha</option>
+
+        <option>Rudrabhishek</option>
+
+        <option>Havan</option>
+
+        <option>Ganesh Puja</option>
+
+        <option>Vastu Puja</option>
+
+        <option>Astrology</option>
+
+    </select>
+
+</div>
+
+<!-- SERVICES -->
+
+<h4 class="join-heading">
+
+Services Offered
+
+</h4>
+
+<div class="service-checks">
+
+<label><input type="checkbox" value="Griha Pravesh"> Griha Pravesh</label>
+
+<label><input type="checkbox" value="Marriage"> Marriage</label>
+
+<label><input type="checkbox" value="Satyanarayan"> Satyanarayan</label>
+
+<label><input type="checkbox" value="Rudrabhishek"> Rudrabhishek</label>
+
+<label><input type="checkbox" value="Havan"> Havan</label>
+
+<label><input type="checkbox" value="Ganesh Puja"> Ganesh Puja</label>
+
+<label><input type="checkbox" value="Lakshmi Puja"> Lakshmi Puja</label>
+
+<label><input type="checkbox" value="Vastu Puja"> Vastu Puja</label>
+
+</div>
+
+<!-- AVAILABILITY -->
+
+<h4 class="join-heading">
+
+Availability
+
+</h4>
+
+<div class="join-double">
+
+<div class="join-input">
+
+<select id="homevisit">
+
+<option>Home Visits?</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+<div class="join-input">
+
+<select id="travel">
+
+<option>Travel Across Mumbai?</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="join-double">
+
+<div class="join-input">
+
+<select id="vehicle">
+
+<option>Own Vehicle?</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+<div class="join-input">
+
+<select id="samagri">
+
+<option>Puja Samagri Available?</option>
+
+<option>Yes</option>
+
+<option>No</option>
+
+</select>
+
+</div>
+
+</div>
+
+<!-- VERIFICATION -->
+
+<h4 class="join-heading">
+
+Verification
+
+</h4>
+
+<div class="join-double">
+
+<div class="join-input">
+
+<input
+id="aadhaar"
+type="text"
+maxlength="12"
+placeholder="Aadhaar Number">
+
+</div>
+
+<div class="join-input">
+
+<input
+id="pan"
+type="text"
+placeholder="PAN Number (Optional)">
+
+</div>
+
+</div>
+
+<div class="join-input">
+
+<textarea
+id="about"
+rows="5"
+placeholder="Tell us about yourself..."></textarea>
+
+</div>
+
+<button
+type="button"
+class="join-submit"
+onclick="registerPandit()">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Register as Pandit
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 {% endblock %}

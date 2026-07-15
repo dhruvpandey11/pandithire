@@ -2,131 +2,278 @@
 
 <section class="booking-section" id="booking">
 
-<div class="container">
+    <div class="container">
 
-    <div class="booking-heading">
+        <div class="booking-wrapper">
 
-        <span>BOOK OUR SERVICES</span>
+            <!-- LEFT SIDE -->
 
-        <h2>अपनी सेवा चुनें</h2>
+            <div class="booking-left">
 
-        <p>
-            पूजा बुक करें या विवाह सेवा के लिए रजिस्ट्रेशन करें।
-        </p>
+                <div class="booking-image">
 
-    </div>
+                    <img src="{% static 'images/bookingpuja.jpeg' %}" alt="Book Puja">
 
-    <!-- Tabs -->
+                </div>
 
-    <div class="booking-tabs">
+                <div class="booking-content">
 
-        <button class="tab-btn active"
-                onclick="showBooking('puja')">
+                    <span class="booking-tag">
+                        🛕 BOOK PUJA ONLINE
+                    </span>
 
-            🛕 पूजा बुक करें
+                    <h2>पूजा बुक करें</h2>
 
-        </button>
+                    <p>
 
-        <button class="tab-btn"
-                onclick="showBooking('marriage')">
+                        घर बैठे अनुभवी एवं प्रमाणित पंडितों द्वारा
+                        गृह प्रवेश, विवाह, सत्यनारायण कथा,
+                        हवन, रुद्राभिषेक तथा सभी धार्मिक
+                        अनुष्ठानों की बुकिंग करें।
 
-            💍 विवाह सेवा
+                    </p>
 
-        </button>
+                    <div class="booking-features">
 
-    </div>
+                        <div class="feature">
 
-    <!-- Puja -->
+                            <i class="fa-solid fa-circle-check"></i>
 
-    <div id="puja-booking" class="booking-card active">
+                            <span>Verified Pandits</span>
 
-        <div class="booking-left">
+                        </div>
 
-            <h3>पूजा बुक करें</h3>
+                        <div class="feature">
 
-            <p>
+                            <i class="fa-solid fa-circle-check"></i>
 
-                घर बैठे अनुभवी एवं प्रमाणित पंडितों द्वारा
-                सभी धार्मिक अनुष्ठान सम्पन्न करवाएँ।
+                            <span>Same Day Booking</span>
 
-            </p>
+                        </div>
 
-            <ul>
+                        <div class="feature">
 
-                <li>✅ Verified Pandits</li>
+                            <i class="fa-solid fa-circle-check"></i>
 
-                <li>✅ Same Day Booking</li>
+                            <span>Transparent Pricing</span>
 
-                <li>✅ Transparent Pricing</li>
+                        </div>
 
-                <li>✅ Doorstep Service</li>
+                        <div class="feature">
 
-                <li>✅ 24×7 Support</li>
+                            <i class="fa-solid fa-circle-check"></i>
 
-            </ul>
+                            <span>Doorstep Service</span>
 
-            <a href="#" class="book-now-btn">
+                        </div>
 
-                📅 Book Now
+                        <div class="feature">
 
-            </a>
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>24×7 Customer Support</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="booking-buttons">
+
+                        <a href="tel:+919999999999" class="call-btn">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Call Now
+
+                        </a>
+
+                        <a href="https://wa.me/919999999999"
+
+                           target="_blank"
+
+                           class="whatsapp-btn">
+
+                            <i class="fab fa-whatsapp"></i>
+
+                            WhatsApp
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="booking-form-card">
+
+                <div class="form-top">
+
+                    <h2>Book a Pandit</h2>
+
+                    <p>
+
+                        Fill the details and we'll contact you shortly.
+
+                    </p>
+
+                </div>
+
+                <form id="bookingForm">
+
+                    <div class="input-group">
+
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Full Name / पूरा नाम"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input
+                            id="mobile"
+                            type="tel"
+                            placeholder="Mobile Number"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="Email (Optional)">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <select id="puja">
+
+                            <option>Select Puja</option>
+
+                            <option>Griha Pravesh</option>
+
+                            <option>Vivah</option>
+
+                            <option>Ganesh Puja</option>
+
+                            <option>Satyanarayan Katha</option>
+
+                            <option>Rudrabhishek</option>
+
+                            <option>Navgraha Shanti</option>
+
+                            <option>Havan</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="double-input">
+
+                        <input
+                            id="date"
+                            type="date">
+
+                        <input
+                            id="time"
+                            type="time">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <input
+                            id="area"
+                            type="text"
+                            placeholder="Area / City">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Special Requirements"></textarea>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="submit-booking"
+                        onclick="sendWhatsApp()">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        Book Pandit
+
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
 
-        <div class="booking-right">
-
-            <img src="{% static 'images/bookingpuja.jpeg' %}" alt="">
-
-        </div>
-
     </div>
-
-    <!-- Marriage -->
-
-    <div id="marriage-booking" class="booking-card">
-
-        <div class="booking-left">
-
-            <h3>विवाह सेवा</h3>
-
-            <p>
-
-                विवाह हेतु अनुभवी वैदिक पंडित,
-                सम्पूर्ण विवाह संस्कार एवं
-                ऑनलाइन बुकिंग।
-
-            </p>
-
-            <ul>
-
-                <li>✅ Marriage Specialists</li>
-
-                <li>✅ Complete Rituals</li>
-
-                <li>✅ Affordable Packages</li>
-
-                <li>✅ Pan India Service</li>
-
-                <li>✅ WhatsApp Support</li>
-
-            </ul>
-
-            <a href="#" class="book-now-btn">
-
-                💍 Register Now
-
-            </a>
-
-        </div>
-
-        <div class="booking-right">
-
-            <img src="{% static 'images/marriage.jpg' %}" alt="">
-
-        </div>
-
-    </div>
-
-</div>
 
 </section>
+
+<script>
+
+function sendWhatsApp(){
+
+let name=document.getElementById("name").value;
+
+let mobile=document.getElementById("mobile").value;
+
+let email=document.getElementById("email").value;
+
+let puja=document.getElementById("puja").value;
+
+let date=document.getElementById("date").value;
+
+let time=document.getElementById("time").value;
+
+let area=document.getElementById("area").value;
+
+let message=document.getElementById("message").value;
+
+let text=
+`🛕 New Pandit Booking
+
+👤 Name: ${name}
+
+📞 Mobile: ${mobile}
+
+📧 Email: ${email}
+
+🙏 Puja: ${puja}
+
+📅 Date: ${date}
+
+🕒 Time: ${time}
+
+📍 Area: ${area}
+
+📝 Requirements:
+${message}`;
+
+let phone="918356807008"; // Replace with your WhatsApp number
+
+window.open(
+`https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+"_blank"
+);
+
+}
+
+</script>

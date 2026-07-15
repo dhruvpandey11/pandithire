@@ -7,3 +7,7 @@ def home(request):
 
 def join_pandit(request):
     return render(request, "home/join_pandit.html")
+
+
+def all_services(request):
+    return render(request, "home/all_services.html")

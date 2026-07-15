@@ -1,0 +1,32 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-banner">
+
+    <div class="container">
+
+        <h1>
+
+            सभी पूजा सेवाएं
+
+        </h1>
+
+        <p>
+
+            अपनी आवश्यकता के अनुसार पूजा चुनें।
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="services">
+
+    {% include "home/sections/services.html" %}
+
+</section>
+
+{% endblock %}
