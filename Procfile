@@ -1,1 +1,1 @@
-web: gunicorn pandithire.wsgi
+web: gunicorn pandithire.wsgi:application
