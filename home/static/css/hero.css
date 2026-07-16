@@ -365,7 +365,7 @@ font-size:18px;
 
     .hero{
 
-    min-height:720px;
+    min-height:600px;
     padding:80px 20px;
 
     background:
@@ -376,7 +376,7 @@ font-size:18px;
     url("../images/hero.png");
 
     background-size:cover;
-    background-position:65% center;
+    background-position:75% center;
     background-repeat:no-repeat;
 }
        
