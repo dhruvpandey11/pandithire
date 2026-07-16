@@ -229,3 +229,41 @@ body{
     padding-top:90px;
 
 }
+
+@media (max-width:992px){
+
+    .menu-toggle{
+        display:block;
+        font-size:28px;
+        background:none;
+        border:none;
+        cursor:pointer;
+        color:#8B1E12;
+        z-index:10001;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:90px;
+        left:0;
+        width:100%;
+        background:#fff;
+        display:none;
+        padding:25px 0;
+        box-shadow:0 15px 30px rgba(0,0,0,.1);
+    }
+
+    .nav-menu.active{
+        display:block;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .book-btn{
+        display:none;
+    }
+
+}
