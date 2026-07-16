@@ -230,27 +230,42 @@ body{
 
 }
 
+.menu-toggle{
+    display:none;
+}
+
 @media (max-width:992px){
 
     .menu-toggle{
         display:block;
-        font-size:28px;
+        font-size:30px;
         background:none;
         border:none;
         cursor:pointer;
         color:#8B1E12;
-        z-index:10001;
+    }
+
+    .book-btn{
+        display:none;
     }
 
     .nav-menu{
+
         position:absolute;
+
         top:90px;
         left:0;
+
         width:100%;
+
         background:#fff;
+
         display:none;
-        padding:25px 0;
-        box-shadow:0 15px 30px rgba(0,0,0,.1);
+
+        padding:20px;
+
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+
     }
 
     .nav-menu.active{
@@ -259,11 +274,8 @@ body{
 
     .nav-links{
         flex-direction:column;
-        gap:20px;
-    }
-
-    .book-btn{
-        display:none;
+        align-items:flex-start;
+        gap:18px;
     }
 
 }
