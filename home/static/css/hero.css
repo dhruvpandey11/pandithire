@@ -362,3 +362,23 @@ font-size:18px;
 }
 
 }
+
+@media (max-width:768px){
+
+    .hero{
+        flex-direction: column;
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-right img{
+        width:100%;
+        max-width:350px;
+        height:auto;
+    }
+}
