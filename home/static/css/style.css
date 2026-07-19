@@ -119,51 +119,98 @@ img{
     }
 }
 
-/* ===========================
-   Mobile Sticky Bottom Bar
-=========================== */
+/* ==========================================
+   PREMIUM MOBILE BOTTOM ACTION BAR
+========================================== */
 
 .mobile-bottom-bar{
     position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:65px;
+    left:12px;
+    right:12px;
+    bottom:calc(env(safe-area-inset-bottom) + 12px);
+    height:72px;
+
     display:none;
-    z-index:9999;
-    box-shadow:0 -5px 20px rgba(0,0,0,.15);
+    align-items:center;
+    justify-content:space-between;
+
+    background:#fff;
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.22);
+
+    z-index:99999;
 }
 
 .mobile-bottom-bar a{
+
     flex:1;
+    height:100%;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    color:#fff;
+
     text-decoration:none;
+
+    color:#fff;
+
     font-size:14px;
     font-weight:600;
+
+    transition:.25s;
+}
+
+.mobile-bottom-bar a:hover{
+    transform:translateY(-2px);
 }
 
 .mobile-bottom-bar i{
-    font-size:20px;
-    margin-bottom:4px;
+    font-size:24px;
+    margin-bottom:6px;
 }
+
+/* Call */
 
 .call-btn{
-    background:#ff5b00;
+    background:#123d72;
 }
+
+/* WhatsApp */
 
 .whatsapp-btn{
-    background:#14b63d;
+
+    background:#17b53d;
+
+    position:relative;
+
+    transform:scale(1.08);
+
+    z-index:5;
+
+    box-shadow:0 6px 20px rgba(23,181,61,.45);
+
 }
 
-.book-btn{
-    background:#0d3d77;
+/* Book */
+
+.book-now-btn{
+    background:#ef7d00;
 }
 
-/* Show only on phones */
+/* Active press */
+
+.mobile-bottom-bar a:active{
+
+    transform:scale(.96);
+
+}
+
+/* Mobile only */
 
 @media(max-width:768px){
 
@@ -172,7 +219,15 @@ img{
     }
 
     body{
-        padding-bottom:70px;
+        padding-bottom:95px;
+    }
+
+}
+
+@media(min-width:769px){
+
+    .mobile-bottom-bar{
+        display:none;
     }
 
 }
