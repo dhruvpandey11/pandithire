@@ -123,15 +123,45 @@
 
                 <form id="bookingForm">
 
-                    <div class="input-group">
+    <!-- Gender Selection -->
 
-                        <input
-                            id="name"
-                            type="text"
-                            placeholder="Full Name / पूरा नाम"
-                            required>
+    <div class="gender-options">
 
-                    </div>
+        <label class="gender-option">
+
+            <input
+                type="radio"
+                name="gender"
+                value="Male"
+                checked>
+
+            <span>मैं लड़का हूँ</span>
+
+        </label>
+
+        <label class="gender-option">
+
+            <input
+                type="radio"
+                name="gender"
+                value="Female">
+
+            <span>मैं लड़की हूँ</span>
+
+        </label>
+
+    </div>
+
+    <div class="input-group">
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Full Name / पूरा नाम"
+            required>
+
+    </div>
+
 
                     <div class="input-group">
 
@@ -249,6 +279,8 @@ let message=document.getElementById("message").value;
 
 let text=
 `🛕 New Pandit Booking
+
+👤 Gender: ${gender}
 
 👤 Name: ${name}
 
