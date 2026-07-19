@@ -1,11 +1,16 @@
-/*=========================================
-SCROLL REVEAL
-=========================================*/
+/*========================================================
+  PANDITHIRE - ANIMATIONS.CSS
+========================================================*/
+
+
+/*========================================================
+  SCROLL REVEAL
+========================================================*/
 
 .reveal{
     opacity:0;
     transform:translateY(70px);
-    transition:all .8s ease;
+    transition:opacity .8s ease, transform .8s ease;
 }
 
 .reveal.active{
@@ -13,37 +18,40 @@ SCROLL REVEAL
     transform:translateY(0);
 }
 
-/*=========================================
-HERO ANIMATIONS
-=========================================*/
+
+/*========================================================
+  HERO ENTRY ANIMATIONS
+========================================================*/
 
 .hero-left{
-    animation:slideLeft 1s ease;
+    animation:slideLeft 1s ease forwards;
 }
 
 .hero-right{
-    animation:slideRight 1s ease;
+    animation:slideRight 1s ease forwards;
 }
 
 .hero-badge{
-    animation:fadeDown .8s ease;
+    animation:fadeDown .8s ease forwards;
 }
 
 .hero-buttons{
-    animation:fadeUp 1s ease;
+    animation:fadeUp 1s ease forwards;
 }
 
-/*=========================================
-FLOATING IMAGE
-=========================================*/
+
+/*========================================================
+  FLOATING HERO IMAGE
+========================================================*/
 
 .hero-right img{
     animation:floatImage 5s ease-in-out infinite;
 }
 
-/*=========================================
-BUTTON SHINE
-=========================================*/
+
+/*========================================================
+  BUTTON SHINE EFFECT
+========================================================*/
 
 .btn-primary{
     position:relative;
@@ -57,18 +65,16 @@ BUTTON SHINE
     position:absolute;
 
     top:0;
-
     left:-120%;
 
-    width:70%;
-
+    width:60%;
     height:100%;
 
     background:rgba(255,255,255,.35);
 
     transform:skewX(-25deg);
 
-    transition:.8s;
+    transition:left .8s ease;
 
 }
 
@@ -78,13 +84,35 @@ BUTTON SHINE
 
 }
 
-/*=========================================
-SERVICE HOVER
-=========================================*/
+
+/*========================================================
+  BUTTON HOVER
+========================================================*/
+
+.btn,
+.service-btn{
+
+    transition:all .35s ease;
+
+}
+
+.btn:hover,
+.service-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/*========================================================
+  SERVICE CARD HOVER
+========================================================*/
 
 .service-card{
 
-    transition:.4s;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
 
 }
 
@@ -98,7 +126,7 @@ SERVICE HOVER
 
 .service-card img{
 
-    transition:.5s;
+    transition:transform .5s ease;
 
 }
 
@@ -108,16 +136,55 @@ SERVICE HOVER
 
 }
 
-/*=========================================
-KEYFRAMES
-=========================================*/
+
+/*========================================================
+  ICON HOVER
+========================================================*/
+
+.service-card i{
+
+    transition:transform .35s ease;
+
+}
+
+.service-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+
+/*========================================================
+  IMAGE HOVER
+========================================================*/
+
+img{
+
+    transition:transform .4s ease;
+
+}
+
+
+/*========================================================
+  LINK HOVER
+========================================================*/
+
+a{
+
+    transition:.3s ease;
+
+}
+
+
+/*========================================================
+  KEYFRAMES
+========================================================*/
 
 @keyframes slideLeft{
 
     from{
 
         opacity:0;
-
         transform:translateX(-80px);
 
     }
@@ -125,19 +192,18 @@ KEYFRAMES
     to{
 
         opacity:1;
-
         transform:translateX(0);
 
     }
 
 }
 
+
 @keyframes slideRight{
 
     from{
 
         opacity:0;
-
         transform:translateX(80px);
 
     }
@@ -145,19 +211,18 @@ KEYFRAMES
     to{
 
         opacity:1;
-
         transform:translateX(0);
 
     }
 
 }
 
+
 @keyframes fadeDown{
 
     from{
 
         opacity:0;
-
         transform:translateY(-40px);
 
     }
@@ -165,19 +230,18 @@ KEYFRAMES
     to{
 
         opacity:1;
-
-        transform:none;
+        transform:translateY(0);
 
     }
 
 }
+
 
 @keyframes fadeUp{
 
     from{
 
         opacity:0;
-
         transform:translateY(40px);
 
     }
@@ -185,12 +249,12 @@ KEYFRAMES
     to{
 
         opacity:1;
-
-        transform:none;
+        transform:translateY(0);
 
     }
 
 }
+
 
 @keyframes floatImage{
 
@@ -202,7 +266,7 @@ KEYFRAMES
 
     50%{
 
-        transform:translateY(-12px);
+        transform:translateY(-14px);
 
     }
 
@@ -211,82 +275,5 @@ KEYFRAMES
         transform:translateY(0);
 
     }
-
-}
-
-/* ========================================
-   SCROLL REVEAL
-======================================== */
-
-.reveal{
-    opacity:0;
-    transform:translateY(60px);
-    transition:opacity .8s ease, transform .8s ease;
-}
-
-.reveal.active{
-    opacity:1;
-    transform:translateY(0);
-}
-
-
-/* ========================================
-   SERVICE CARD
-======================================== */
-
-.service-card{
-    transition:transform .35s ease, box-shadow .35s ease;
-}
-
-.service-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 50px rgba(0,0,0,.15);
-}
-
-.service-card img{
-    transition:transform .5s ease;
-}
-
-.service-card:hover img{
-    transform:scale(1.08);
-}
-
-
-/* ========================================
-   BUTTONS
-======================================== */
-
-.btn,
-.service-btn{
-    transition:all .35s ease;
-}
-
-.btn:hover,
-.service-btn:hover{
-    transform:translateY(-3px);
-}
-
-
-/* ========================================
-   FLOATING HERO IMAGE
-======================================== */
-
-.hero-image{
-    animation:float 5s ease-in-out infinite;
-}
-
-@keyframes float{
-
-0%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-15px);
-}
-
-100%{
-transform:translateY(0);
-}
 
 }
