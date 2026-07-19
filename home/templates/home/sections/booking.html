@@ -257,55 +257,40 @@
 
 </section>
 
-<script>
+<<script>
+function sendWhatsApp() {
 
-function sendWhatsApp(){
+    // Get selected gender
+    let gender = document.querySelector('input[name="gender"]:checked').value;
 
-let name=document.getElementById("name").value;
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("mobile").value;
+    let email = document.getElementById("email").value;
+    let puja = document.getElementById("puja").value;
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let area = document.getElementById("area").value;
+    let message = document.getElementById("message").value;
 
-let mobile=document.getElementById("mobile").value;
-
-let email=document.getElementById("email").value;
-
-let puja=document.getElementById("puja").value;
-
-let date=document.getElementById("date").value;
-
-let time=document.getElementById("time").value;
-
-let area=document.getElementById("area").value;
-
-let message=document.getElementById("message").value;
-
-let text=
-`🛕 New Pandit Booking
+    let text = `🛕 *New Pandit Booking*
 
 👤 Gender: ${gender}
-
 👤 Name: ${name}
-
 📞 Mobile: ${mobile}
-
 📧 Email: ${email}
-
 🙏 Puja: ${puja}
-
 📅 Date: ${date}
-
 🕒 Time: ${time}
-
 📍 Area: ${area}
 
 📝 Requirements:
 ${message}`;
 
-let phone="919076203111"; // Replace with your WhatsApp number
+    let phone = "919076203111";
 
-window.open(
-`https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
-"_blank"
-);
-
+    window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
 }
-
 </script>
