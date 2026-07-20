@@ -269,13 +269,192 @@
 
         </div>
 
-        <div id="marriage-booking"
+      <div id="marriage-booking"
      class="booking-wrapper"
      style="display:none;">
 
-    <h2 style="text-align:center;padding:120px;">
-        💍 Marriage Booking Section
-    </h2>
+    <!-- LEFT SIDE -->
+
+    <div class="booking-left">
+
+        <div class="booking-image">
+
+            <img src="{% static 'images/bookingmarriage.jpeg' %}" alt="Marriage Booking">
+
+        </div>
+
+        <div class="booking-content">
+
+            <span class="booking-tag">
+                💍 BOOK MARRIAGE
+            </span>
+
+            <h2>विवाह बुक करें</h2>
+
+            <p>
+                अनुभवी वैदिक पंडितों द्वारा सम्पूर्ण हिन्दू विवाह,
+                फेरे, सप्तपदी, कन्यादान एवं सभी विवाह संस्कार
+                पूरे विधि-विधान के साथ सम्पन्न कराए जाते हैं।
+            </p>
+
+            <div class="booking-features">
+
+                <div class="feature">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Verified Marriage Pandits</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>North & South Indian Rituals</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Destination Weddings</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Complete Wedding Ceremony</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>24×7 Assistance</span>
+                </div>
+
+            </div>
+
+            <div class="booking-buttons">
+
+                <a href="tel:+919076203111" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    Call Now
+                </a>
+
+                <a href="https://wa.me/919076203111"
+                   target="_blank"
+                   class="whatsapp-btn">
+
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="booking-form-card">
+
+        <div class="form-top">
+
+            <h2>Book Marriage</h2>
+
+            <p>
+                Fill your wedding details and we'll contact you shortly.
+            </p>
+
+        </div>
+
+        <form id="marriageForm">
+
+            <div class="input-group">
+                <input
+                    id="groom"
+                    type="text"
+                    placeholder="Groom Name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <input
+                    id="bride"
+                    type="text"
+                    placeholder="Bride Name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <input
+                    id="marriagemobile"
+                    type="tel"
+                    placeholder="Mobile Number"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <input
+                    id="marriageemail"
+                    type="email"
+                    placeholder="Email (Optional)">
+            </div>
+
+            <div class="double-input">
+
+                <input
+                    id="marriagedate"
+                    type="date">
+
+                <input
+                    id="marriagetime"
+                    type="time">
+
+            </div>
+
+            <div class="input-group">
+                <input
+                    id="venue"
+                    type="text"
+                    placeholder="Wedding Venue">
+            </div>
+
+            <div class="input-group">
+
+                <select id="marriagetype">
+
+                    <option>Wedding Type</option>
+
+                    <option>Traditional Hindu Wedding</option>
+
+                    <option>Arya Samaj Marriage</option>
+
+                    <option>Destination Wedding</option>
+
+                    <option>Temple Marriage</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea
+                    id="marriagemessage"
+                    rows="4"
+                    placeholder="Special Requirements"></textarea>
+
+            </div>
+
+            <button
+                type="button"
+                class="submit-booking"
+                onclick="sendMarriageWhatsApp()">
+
+                <i class="fa-solid fa-heart"></i>
+
+                Book Marriage
+
+            </button>
+
+        </form>
+
+    </div>
 
 </div>
 
@@ -283,7 +462,7 @@
 
 </section>
 
-<<script>
+<script>
 function sendWhatsApp() {
 
     // Get selected gender
@@ -333,5 +512,44 @@ function showBooking(type, button){
     });
 
     button.classList.add("active");
+}
+
+function sendMarriageWhatsApp(){
+
+    let groom = document.getElementById("groom").value;
+    let bride = document.getElementById("bride").value;
+    let mobile = document.getElementById("marriagemobile").value;
+    let email = document.getElementById("marriageemail").value;
+    let date = document.getElementById("marriagedate").value;
+    let time = document.getElementById("marriagetime").value;
+    let venue = document.getElementById("venue").value;
+    let type = document.getElementById("marriagetype").value;
+    let message = document.getElementById("marriagemessage").value;
+
+    let text = `💍 *New Marriage Booking*
+
+🤵 Groom: ${groom}
+
+👰 Bride: ${bride}
+
+📞 Mobile: ${mobile}
+
+📧 Email: ${email}
+
+📅 Wedding Date: ${date}
+
+🕒 Time: ${time}
+
+📍 Venue: ${venue}
+
+💒 Wedding Type: ${type}
+
+📝 Requirements:
+${message}`;
+
+    window.open(
+        `https://wa.me/919076203111?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
 }
 </script>
