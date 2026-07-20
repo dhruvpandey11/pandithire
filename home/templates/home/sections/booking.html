@@ -4,7 +4,21 @@
 
     <div class="container">
 
-        <div class="booking-wrapper">
+        <div class="booking-tabs">
+
+    <button class="tab-btn active"
+            onclick="showBooking('puja', this)">
+        🛕 Puja Booking
+    </button>
+
+    <button class="tab-btn"
+            onclick="showBooking('marriage', this)">
+        💍 Marriage Booking
+    </button>
+
+</div>
+
+        <div id="puja-booking" class="booking-wrapper"></div>
 
             <!-- LEFT SIDE -->
 
